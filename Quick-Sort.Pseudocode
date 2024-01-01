@@ -1,0 +1,9 @@
+ALGORITHM Quicksort(A[l..r])
+//Sorts a subarray by quicksort
+//Input: Subarray of array A[0..n − 1], defined by its left and right
+// indices l and r
+//Output: Subarray A[l..r] sorted in nondecreasing order
+if l<r
+s ←Partition(A[l..r]) //s is a split position
+Quicksort(A[l..s − 1])
+Quicksort(A[s + 1..r])
